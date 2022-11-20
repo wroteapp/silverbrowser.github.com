@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Source+Code+Pro:wght@900&display=swap')
+
+$main-clr: #8043FF
+$main-clr-light: #996aff
+$white-clr: #ffffff
+$black-clr: #20123a
+
+$plain-fnt: 'Roboto', sans-serif
+$monospace-fnt: 'Source Code Pro', monospace
+
+body
+    font-family: $plain-fnt
+    font-size: 20px
+    background-color: $white-clr
+    color: $black-clr
+    margin: 0
+    padding: 0
+    text-align: center
+
+h1, h2, h3, h4, h5 
+    font-family: $monospace-fnt
+    font-weight: 900
+
+%section
+    padding: 5em 10em
+
+header
+    @extend %section
+    background-image: url(/src/images/background.jpg)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 100%
+    height: 69vh
+
+a
+    color: $main-clr
+    font-weight: 900
+    text-decoration: none
+    button
+        color: $white-clr
+
+button
+    background-color: $main-clr-light
+    border: $main-clr 5px solid
+    font-weight: bold
+    color: $white-clr
+    padding: 1em
+    font-size: 1rem
+    border-radius: 5px
